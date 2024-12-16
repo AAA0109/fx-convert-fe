@@ -1,0 +1,24 @@
+.spinner {
+  transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation: spin cubic-bezier(0.8, 0, 0.2, 0.8) infinite;
+  animation: spin cubic-bezier(0.8, 0, 0.2, 0.8) infinite;
+  -webkit-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,58 @@
+name: Automatic CI merge workflows
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 12 * * MON-FRI #Every weekday at noon UTC
+
+jobs:
+  automatic_merge:
+    runs-on: ubuntu-latest
+    name: Merging between branches
+    steps:
+      - uses: actions/checkout@master
+      - name: Get current date
+        id: date
+        run: echo "CURRENT_DATE=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
+      - name: Get current day of the week
+        id: dayofweek
+        run: echo "CURRENT_DOW=$(date +%u)" >> ${GITHUB_ENV} #1=Monday, 7=Sunday
+      #Merge from staging-ondeck to production on friday
+      # - name: Merge staging-ondeck -> production
+      #   if: ${{env.CURRENT_DOW == '5'}} #only run if friday
+      #   uses: devmasx/merge-branch@master
+      #   with:
+      #     type: now
+      #     from_branch: staging-ondeck
+      #     target_branch: production
+      #     message: Merge to production branch for ${{env.CURRENT_DATE}}
+      #     github_token: ${{ github.token }}
+      #Merge from staging to staging-ondeck on friday
+      - name: Merge staging -> staging-ondeck
+        if: ${{env.CURRENT_DOW == '5'}} #only run if friday
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: deploy/staging
+          target_branch: deploy/staging-ondeck
+          message: Merge to staging-ondeck branch for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      #Merge from dev to staging on wednesday and friday
+      - name: Merge development -> staging
+        if: ${{env.CURRENT_DOW == '3' || env.CURRENT_DOW == '5'}} #only run if wednesday or friday
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: deploy/development
+          target_branch: deploy/staging
+          message: Merge to staging branch for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      #Daily merge from main to dev. No restrictions
+      - name: Merge main -> development
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: main
+          target_branch: deploy/development
+          message: Daily merge to development branch for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}

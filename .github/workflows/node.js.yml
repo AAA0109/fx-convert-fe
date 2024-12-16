@@ -1,0 +1,79 @@
+name: Pangea App CI
+
+on:
+  push:
+    branches:
+      [
+        main,
+        deploy/development,
+        deploy/staging,
+        deploy/staging-ondeck,
+        deploy/production,
+      ]
+  pull_request:
+    branches:
+      [
+        main,
+        deploy/development,
+        deploy/demo,
+        deploy/staging,
+        deploy/staging-ondeck,
+        deploy/production,
+      ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+
+env:
+  CFE_NPM_TOKEN: ${{ secrets.CFE_NPM_TOKEN }}
+  NEXT_PUBLIC_PANGEA_API_URL: ${{ secrets.NEXT_PUBLIC_PANGEA_API_URL }}
+  IBRK_TEST_USERNAME: ${{ secrets.IBRK_TEST_USERNAME }}
+  IBRK_TEST_PASSWORD: ${{ secrets.IBRK_TEST_PASSWORD }}
+  CP_TEST_USERNAME: ${{ secrets.CP_TEST_USERNAME }}
+  CP_TEST_PASSWORD: ${{ secrets.CP_TEST_PASSWORD }}
+  NEXT_PUBLIC_MUI_LICENSE: ${{ secrets.NEXT_PUBLIC_MUI_LICENSE }}
+  NEXT_PUBLIC_ENABLE_FEATURE_FLAG_DEVTOOL: true
+
+jobs:
+  test-frontend:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: ./pangea-web
+    strategy:
+      matrix:
+        node-version: [18.x]
+        architecture: [x64]
+    steps:
+      - name: CHECK-OUT GIT REPOSITORY
+        uses: actions/checkout@v2
+
+      - name: USE NODEJS ${{ matrix.node-version }} - ${{ matrix.architecture }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+          cache-dependency-path: pangea-web/package-lock.json
+
+      - name: INSTALL PROJECT DEPENDENCIES
+        run: npm ci --legacy-peer-deps
+
+      - name: INSTALL SWC DEPENDENCIES
+        run: npm install -E --save-optional @next/swc-linux-x64-gnu
+
+      - name: RUN LINTER
+        run: npm run lint
+
+      - name: UNIT TEST (JEST)
+        run: npm run test:ci
+
+      # - name: Install playwright browsers
+      #   run: npx playwright install --with-deps
+
+      # - name: Build project
+      #   run: npm run build
+
+      # - name: E2E TEST (PLAYWRIGHT)
+      #   run: npm run test:e2e

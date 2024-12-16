@@ -1,0 +1,16 @@
+.DS_Store
+/.vs/
+node_modules
+package.json
+package-lock.json
+.npmrc
+# Local Netlify folder
+.netlify
+.env.development
+# VS Code
+/.vscode/
+# Playwright
+pangea-web/test-results/
+# IntelliJ
+.idea/
+.secrets

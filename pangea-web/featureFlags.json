@@ -1,0 +1,87 @@
+{
+  "onboarding-link-withdrawal-account": {
+    "enabled": false,
+    "createdAt": "03/15/2023",
+    "description": "During onboarding, user will be required to link an account for withdrawal"
+  },
+  "cashflow-validate-end-date": {
+    "enabled": true,
+    "createdAt": "04/29/2023",
+    "description": "During any cashflow process, end date will be validated"
+  },
+  "disable-error-redirects": {
+    "enabled": false,
+    "createdAt": "08/01/2023",
+    "description": "Errors will be logged and redirect to dashboard"
+  },
+  "corpay-forwards-strategy": {
+    "enabled": true,
+    "createdAt": "07/24/2023",
+    "description": "During hedge creation, use zero-gravity or auto-pilot strategy"
+  },
+  "automated-onboarding": {
+    "enabled": false,
+    "createdAt": "10/27/2023",
+    "description": "Automated Onboarding flow"
+  },
+  "zero-gravity": {
+    "enabled": false,
+    "createdAt": "02/01/2024",
+    "description": "Enables Zero-Gravity when creating hedges"
+  },
+  "autopilot": {
+    "enabled": true,
+    "createdAt": "12/12/2023",
+    "description": "Enables AutoPilot option when creating hedges"
+  },
+  "autopilot-hard-limits": {
+    "enabled": false,
+    "createdAt": "12/12/2024",
+    "description": "Enables Hard limits for AutoPilot option when creating hedges"
+  },
+  "parachute": {
+    "enabled": false,
+    "createdAt": "03/30/2024",
+    "description": "Enables Parachute option when creating hedges"
+  },
+  "strategic-execution": {
+    "enabled": true,
+    "createdAt": "03/30/2024",
+    "description": "Enables Strategic Execution for Payments"
+  },
+  "hedges": {
+    "enabled": false,
+    "createdAt": "03/30/2024",
+    "description": "Enables Hedges/Cashflows"
+  },
+  "wallets": {
+    "enabled": false,
+    "createdAt": "04/13/2024",
+    "description": "Enables Wallets and Payments"
+  },
+  "transactions": {
+    "enabled": true,
+    "createdAt": "04/23/2024",
+    "description": "Enables Payments v2.0"
+  },
+  "bulk-payments": {
+    "enabled": true,
+    "createdAt": "06/26/2024",
+    "description": "Enables Bulk Payments"
+  },
+  "risk-usd-restriction": {
+    "enabled": false,
+    "createdAt": "06/26/2024",
+    "description": "Enables USD restriction for Risk Insights"
+  },
+  "strip-payments": {
+    "enabled": true,
+    "createdAt": "06/26/2024",
+    "description": "Enables Strip Payments"
+  },
+  "currency-insights": {
+    "enabled": true,
+    "createdAt": "08/22/2024",
+    "description": "Enables Currency Insights"
+  }
+}

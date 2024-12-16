@@ -1,0 +1,18 @@
+<svg width="48" height="193" viewBox="0 0 48 193" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect opacity="0.5" width="95.5176" height="48" transform="matrix(8.66759e-08 -1 -1 -2.2044e-08 48 193)" fill="url(#pattern0)"/>
+<rect opacity="0.5" width="96.4824" height="48" transform="matrix(8.66759e-08 -1 -1 -2.2044e-08 48 97)" fill="url(#pattern1)"/>
+<rect opacity="0.9" y="97" width="48" height="48" transform="rotate(-90 0 97)" fill="#DC4B63"/>
+<rect opacity="0.9" y="145" width="48" height="48" transform="rotate(-90 0 145)" fill="#A4DB4B"/>
+<path d="M25.0607 143.939C24.4749 143.354 23.5251 143.354 22.9393 143.939L13.3934 153.485C12.8076 154.071 12.8076 155.021 13.3934 155.607C13.9792 156.192 14.9289 156.192 15.5147 155.607L24 147.121L32.4853 155.607C33.0711 156.192 34.0208 156.192 34.6066 155.607C35.1924 155.021 35.1924 154.071 34.6066 153.485L25.0607 143.939ZM25.5 193L25.5 145L22.5 145L22.5 193L25.5 193Z" fill="black"/>
+<path d="M25.0607 50.0607C24.4749 50.6464 23.5251 50.6464 22.9393 50.0607L13.3934 40.5147C12.8076 39.9289 12.8076 38.9792 13.3934 38.3934C13.9792 37.8076 14.9289 37.8076 15.5147 38.3934L24 46.8787L32.4853 38.3934C33.0711 37.8076 34.0208 37.8076 34.6066 38.3934C35.1924 38.9792 35.1924 39.9289 34.6066 40.5147L25.0607 50.0607ZM25.5 1L25.5 49L22.5 49L22.5 1L25.5 1Z" fill="black"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.167508" height="0.333333">
+<use xlink:href="#image0_4606_107822" transform="scale(0.00523464 0.0104167)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="0.165833" height="0.333333">
+<use xlink:href="#image1_4606_107822" transform="scale(0.00518229 0.0104167)"/>
+</pattern>
+<image id="image0_4606_107822" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADVSURBVHgBxda9DcJADIZhx1IqCipqNmEBNmIAJmES1qBCoqNKkSoSQb4iUpQ/58725zrS+zjNuXq8rj0p5lif6XK6Uc2HxW+6X0vP752a7k3aYc1HXnEVwDO+CfCOrwIi4ouAqPgsIDI+AUTHRwBEfACg4gmAjMtUTfvpUXFZnpFx+fOMjMvyjIzLMDI+AUTHRwBEfACg4gmAjCcAMi7LMzIuy6uOUq+4LG8KyHnYzAC5r6oJoORJLwaU3hNFAItjJhtgdUllASzPuN0A6xtyF8DjgP0DlSImEyoupT4AAAAASUVORK5CYII="/>
+<image id="image1_4606_107822" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADVSURBVHgBxdYhDsJQDMbxrgmCIHEo7sMxUJyCcAouh0BNgYMgSBj0iSXL2Na91/arXvL/dea1uuz2DSlmsd3Q+nQgXi0Hv/k8X3Q/nul9rUk7rPnIK64CeMYnAd7xUUBEfBAQFf8LiIz3ANHxDgARbwGoeAIg4zLV41Y3qLgsz8h4+vOEjP+WZ2RchpHxHiA63gEg4i0AFU8AZDwBkHFZnpFxWV51lHrFZXlTQM7DZgbIfVVNACVPejGg9J4oAlgcM9kAq0sqC2B5xs0GWN+QswAeB+wXZ6cln5TfTuAAAAAASUVORK5CYII="/>
+</defs>
+</svg>

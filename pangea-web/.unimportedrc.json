@@ -1,0 +1,34 @@
+{
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/*.tests.{js,jsx,ts,tsx}",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/tests/**",
+    "**/__tests__/**",
+    "**/*.d.ts"
+  ],
+  "ignoreUnimported": [
+    "newrelic.js",
+    "next.config.js",
+    "public/scripts/newrelic.js",
+    "replaceNullEnum.config.js",
+    "jest.*.js"
+  ],
+  "ignoreUnused": [
+    "next",
+    "react",
+    "react-dom",
+    "next-build-id",
+    "@newrelic/next"
+  ],
+  "ignoreUnresolved": [],
+  "aliases": {
+    "components/*": ["./components/*"],
+    "atoms/*": ["./atoms/*"],
+    "lib/*": ["./lib/*"],
+    "styles/*": ["./styles/*"],
+    "public/*": ["./public/*"],
+    "hooks/*": ["./hooks/*"]
+  }
+}

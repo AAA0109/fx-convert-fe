@@ -1,0 +1,10 @@
+{
+  "EmailChange": "Email changed from: {old_email} to: {new_email}",
+  "PasswordReset": "You changed your password",
+  "UserAdded": "User added: {email}",
+  "AccountCreated": "Created an account",
+  "IbVerified": "IB's verified",
+  "CompanyVerified": "Company verified",
+  "PaymentCreated": "Payment created",
+  "PaymentChanged": "Payment changed"
+}

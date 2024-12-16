@@ -1,0 +1,14 @@
+<svg id="eDVBS3znatv1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <style>
+    <![CDATA[#eDVBS3znatv1{pointer-events: all}#eDVBS3znatv1:hover #eDVBS3znatv2 {animation: eDVBS3znatv2__m 1500ms linear 1 normal forwards}@keyframes eDVBS3znatv2__m { 0% {d: path('M0,0C0,0,210.880737,0,210.880737,0C210.880737,0,210.880737,210.880737,210.880737,210.880737C210.880737,210.880737,0,210.880737,0,210.880737C0,210.880737,0,0,0,0Z')} 26.666667% {d: path('M0,0C0,0,210.880737,0,210.880737,0C210.880737,0,210.880737,210.880737,210.880737,210.880737C210.880737,210.880737,0,210.880737,0,210.880737C0,210.880737,0,0,0,0Z')} 46.666667% {d: path('M28.042414,31.609127C28.042414,31.609127,105.725938,-46.074378,183.409437,31.609127C227.987853,76.187542,208.534802,149.5445,183.409437,174.669851C127.518336,230.560964,62.19255,208.819991,28.042414,174.669851C-5.362836,141.264602,-6.025453,65.676999,28.042414,31.609127Z')} 100% {d: path('M28.042414,31.609127C28.042414,31.609127,105.725938,-46.074378,183.409437,31.609127C227.987853,76.187542,208.534802,149.5445,183.409437,174.669851C127.518336,230.560964,62.19255,208.819991,28.042414,174.669851C-5.362836,141.264602,-6.025453,65.676999,28.042414,31.609127Z')}} #eDVBS3znatv1:hover #eDVBS3znatv2_to {animation: eDVBS3znatv2_to__to 1500ms linear 1 normal forwards}@keyframes eDVBS3znatv2_to__to { 0% {transform: translate(187.843345px,250.000006px);animation-timing-function: cubic-bezier(0.42,0,0.58,1)} 13.333333% {transform: translate(142.58951px,250.000009px);animation-timing-function: cubic-bezier(0.42,0,0.195,0.88)} 46.666667% {transform: translate(797.016163px,250.000011px)} 100% {transform: translate(797.016163px,250.000011px)}}]]>
+  </style>
+  <g id="eDVBS3znatv2_to" transform="translate(187.843345,250.000006)">
+    <path id="eDVBS3znatv2" d="M0,0C0,0,210.880737,0,210.880737,0s0,210.880737,0,210.880737-210.880737,0-210.880737,0C0,210.880737,0,0,0,0Z" transform="translate(-105.440368,-105.440368)" fill="#282829" />
+  </g>
+  <ellipse rx="108.798494" ry="108.798494" transform="matrix(.969134 0 0 0.969134 798.456554 250.000007)" fill="none" stroke="#282829" stroke-width="12" />
+  <g transform="matrix(1.317573 0 0 1.317575-149.808402-419.537248)">
+    <line x1="-76.626501" y1="0" x2="84.37695" y2="0" transform="translate(489.310627 508.158727)" fill="none" stroke="#282829" stroke-width="8" stroke-linecap="round" />
+    <line x1="26.196325" y1="21.303408" x2="-26.196326" y2="-21.303408" transform="translate(547.491252 486.855319)" fill="none" stroke="#282829" stroke-width="8" stroke-linecap="round" stroke-miterlimit="5" />
+    <line x1="26.196325" y1="21.303408" x2="-26.196326" y2="-21.303408" transform="matrix(1 0 0-1 547.491252 529.462135)" fill="none" stroke="#282829" stroke-width="8" stroke-linecap="round" stroke-miterlimit="5" />
+  </g>
+</svg>

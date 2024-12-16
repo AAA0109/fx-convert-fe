@@ -1,0 +1,34 @@
+name: Pangea PR CI
+
+on:
+  pull_request:
+    branches:
+      [
+        main,
+        deploy/development,
+        deploy/demo,
+        deploy/staging,
+        deploy/staging-ondeck,
+        deploy/production,
+      ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+
+jobs:
+  pr-template-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR Template
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          # Check if PR body includes the template
+          if [[ "$PR_BODY" == *'## Pull Request Description'* ]]; then
+             echo "All required headings are present in the PR body."
+          else
+            echo "Not all required headings are present in the PR body."
+            exit 1
+          fi

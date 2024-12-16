@@ -1,0 +1,1988 @@
+{
+  "user": {
+    "id": 12,
+    "first_name": "Patrick",
+    "last_name": "Creehan",
+    "email": "patrick@servant.io",
+    "company": {
+      "stripe_customer_id": "332222",
+      "id": 1,
+      "currency": {
+        "id": 1,
+        "symbol": "$",
+        "mnemonic": "USD",
+        "name": "US Dollar",
+        "unit": null,
+        "numeric_code": "840"
+      },
+      "settings": {
+        "corpay": {
+          "wallet": false,
+          "forwards": true
+        },
+        "ibkr": {
+          "spot": true
+        },
+        "payment": {
+          "stripe": true
+        }
+      },
+      "status": "Active",
+      "name": "ACME",
+      "created": "2022-04-22T18:54:15.858145Z"
+    },
+    "accounts": [
+      {
+        "id": 1,
+        "company": {
+          "id": 1,
+          "currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "status": "Active",
+          "name": "ACME",
+          "created": "2022-04-22T18:54:15.858145Z"
+        },
+        "type": "Live",
+        "name": "high",
+        "created": "2022-04-22T18:54:25.182771Z",
+        "is_active": true
+      },
+      {
+        "id": 3,
+        "company": {
+          "id": 1,
+          "currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "status": "Active",
+          "name": "ACME",
+          "created": "2022-04-22T18:54:15.858145Z"
+        },
+        "type": "Live",
+        "name": "low",
+        "created": "2022-06-15T17:43:24.514969Z",
+        "is_active": true
+      },
+      {
+        "id": 2,
+        "company": {
+          "id": 1,
+          "currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "status": "Active",
+          "name": "ACME",
+          "created": "2022-04-22T18:54:15.858145Z"
+        },
+        "type": "Live",
+        "name": "moderate",
+        "created": "2022-04-22T18:54:37.822436Z",
+        "is_active": true
+      },
+      {
+        "id": 4,
+        "company": {
+          "id": 1,
+          "currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "status": "Active",
+          "name": "ACME",
+          "created": "2022-04-22T18:54:15.858145Z"
+        },
+        "type": "Live",
+        "name": "custom",
+        "created": "2022-06-15T17:44:05.766673Z",
+        "is_active": true
+      },
+      {
+        "id": 5,
+        "company": {
+          "id": 1,
+          "currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "status": "Active",
+          "name": "ACME",
+          "created": "2022-04-22T18:54:15.858145Z"
+        },
+        "type": "Draft",
+        "name": "draft",
+        "created": "2022-06-15T17:44:14.754423Z",
+        "is_active": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "customer_admin",
+        "permissions": []
+      }
+    ]
+  },
+  "currencies": {
+    "CAD": {
+      "id": 4,
+      "symbol": "$",
+      "mnemonic": "CAD",
+      "name": "Canadian Dollar",
+      "unit": null,
+      "numeric_code": "124",
+      "rate": "1.292"
+    },
+    "MXN": {
+      "id": 5,
+      "symbol": "$",
+      "mnemonic": "MXN",
+      "name": "Mexican Peso",
+      "unit": null,
+      "numeric_code": "484",
+      "rate": "20.1238"
+    },
+    "JPY": {
+      "id": 6,
+      "symbol": "¥",
+      "mnemonic": "JPY",
+      "name": "Japanese Yen",
+      "unit": null,
+      "numeric_code": "392",
+      "rate": "136.6455"
+    },
+    "CNY": {
+      "id": 8,
+      "symbol": "元",
+      "mnemonic": "CNY",
+      "name": "Chinese Yuan",
+      "unit": null,
+      "numeric_code": "156",
+      "rate": "6.689532"
+    },
+    "KRW": {
+      "id": 10,
+      "symbol": "₩",
+      "mnemonic": "KRW",
+      "name": "South Korean won",
+      "unit": null,
+      "numeric_code": "410",
+      "rate": "1292.45"
+    },
+    "SGD": {
+      "id": 11,
+      "symbol": "$",
+      "mnemonic": "SGD",
+      "name": "Singapore dollar",
+      "unit": null,
+      "numeric_code": "702",
+      "rate": "1.38569"
+    },
+    "CNH": {
+      "id": 22,
+      "symbol": "¥",
+      "mnemonic": "CNH",
+      "name": "Renminbi",
+      "unit": null,
+      "numeric_code": "n/a",
+      "rate": "6.69069"
+    },
+    "HKD": {
+      "id": 21,
+      "symbol": "HK$",
+      "mnemonic": "HKD",
+      "name": "Hong Kong Dollar",
+      "unit": null,
+      "numeric_code": "344",
+      "rate": "7.84997"
+    },
+    "ILS": {
+      "id": 23,
+      "symbol": "₪",
+      "mnemonic": "ILS",
+      "name": "Israeli new shekel",
+      "unit": null,
+      "numeric_code": "376",
+      "rate": "3.45217"
+    },
+    "EUR": {
+      "id": 2,
+      "symbol": "€",
+      "mnemonic": "EUR",
+      "name": "Euro",
+      "unit": null,
+      "numeric_code": "978",
+      "rate": "0.9492664543474031"
+    },
+    "AUD": {
+      "id": 7,
+      "symbol": "$",
+      "mnemonic": "AUD",
+      "name": "Australian Dollar",
+      "unit": null,
+      "numeric_code": "036",
+      "rate": "1.4345247061017508"
+    },
+    "GBP": {
+      "id": 3,
+      "symbol": "£",
+      "mnemonic": "GBP",
+      "name": "Great British Pound",
+      "unit": null,
+      "numeric_code": "826",
+      "rate": "0.8144914315501401"
+    }
+  },
+  "fxPairs": {
+    "count": 39,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "base_currency": {
+          "id": 2,
+          "symbol": "€",
+          "mnemonic": "EUR",
+          "name": "Euro",
+          "unit": null,
+          "numeric_code": "978"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 2,
+        "base_currency": {
+          "id": 3,
+          "symbol": "£",
+          "mnemonic": "GBP",
+          "name": "Great British Pound",
+          "unit": null,
+          "numeric_code": "826"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 3,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 4,
+          "symbol": "$",
+          "mnemonic": "CAD",
+          "name": "Canadian Dollar",
+          "unit": null,
+          "numeric_code": "124"
+        }
+      },
+      {
+        "id": 4,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 5,
+          "symbol": "$",
+          "mnemonic": "MXN",
+          "name": "Mexican Peso",
+          "unit": null,
+          "numeric_code": "484"
+        }
+      },
+      {
+        "id": 5,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 6,
+          "symbol": "¥",
+          "mnemonic": "JPY",
+          "name": "Japanese Yen",
+          "unit": null,
+          "numeric_code": "392"
+        }
+      },
+      {
+        "id": 6,
+        "base_currency": {
+          "id": 7,
+          "symbol": "$",
+          "mnemonic": "AUD",
+          "name": "Australian Dollar",
+          "unit": null,
+          "numeric_code": "036"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 7,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 8,
+          "symbol": "元",
+          "mnemonic": "CNY",
+          "name": "Chinese Yuan",
+          "unit": null,
+          "numeric_code": "156"
+        }
+      },
+      {
+        "id": 8,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 9,
+          "symbol": "₺",
+          "mnemonic": "TRY",
+          "name": "Turkish Lira",
+          "unit": null,
+          "numeric_code": "949"
+        }
+      },
+      {
+        "id": 9,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 10,
+          "symbol": "₩",
+          "mnemonic": "KRW",
+          "name": "South Korean won",
+          "unit": null,
+          "numeric_code": "410"
+        }
+      },
+      {
+        "id": 10,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 11,
+          "symbol": "$",
+          "mnemonic": "SGD",
+          "name": "Singapore dollar",
+          "unit": null,
+          "numeric_code": "702"
+        }
+      },
+      {
+        "id": 11,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 12,
+          "symbol": "R",
+          "mnemonic": "ZAR",
+          "name": "South African Rand",
+          "unit": null,
+          "numeric_code": "710"
+        }
+      },
+      {
+        "id": 12,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 13,
+          "symbol": "Rp",
+          "mnemonic": "IDR",
+          "name": "Indonesian rupiah",
+          "unit": null,
+          "numeric_code": "360"
+        }
+      },
+      {
+        "id": 13,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 16,
+          "symbol": "₹",
+          "mnemonic": "INR",
+          "name": "Indian rupee",
+          "unit": null,
+          "numeric_code": "356"
+        }
+      },
+      {
+        "id": 14,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 14,
+          "symbol": "Fr",
+          "mnemonic": "CHF",
+          "name": "Swiss Franc",
+          "unit": null,
+          "numeric_code": "756"
+        }
+      },
+      {
+        "id": 15,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 15,
+          "symbol": "$",
+          "mnemonic": "BRL",
+          "name": "Brazilian real",
+          "unit": null,
+          "numeric_code": "986"
+        }
+      },
+      {
+        "id": 16,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 17,
+          "symbol": "₽",
+          "mnemonic": "RUB",
+          "name": "Russian ruble",
+          "unit": null,
+          "numeric_code": "643"
+        }
+      },
+      {
+        "id": 17,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 18,
+          "symbol": "NAFl",
+          "mnemonic": "ANG",
+          "name": "Netherlands Antillean guilder",
+          "unit": null,
+          "numeric_code": "532"
+        }
+      },
+      {
+        "id": 18,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 19,
+          "symbol": "﷼",
+          "mnemonic": "SAR",
+          "name": "Saudi riyal",
+          "unit": null,
+          "numeric_code": "682"
+        }
+      },
+      {
+        "id": 19,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 20,
+          "symbol": "$",
+          "mnemonic": "ARS",
+          "name": "Argentine peso",
+          "unit": null,
+          "numeric_code": "032"
+        }
+      },
+      {
+        "id": 20,
+        "base_currency": {
+          "id": 4,
+          "symbol": "$",
+          "mnemonic": "CAD",
+          "name": "Canadian Dollar",
+          "unit": null,
+          "numeric_code": "124"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 21,
+        "base_currency": {
+          "id": 6,
+          "symbol": "¥",
+          "mnemonic": "JPY",
+          "name": "Japanese Yen",
+          "unit": null,
+          "numeric_code": "392"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 22,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 22,
+          "symbol": "¥",
+          "mnemonic": "CNH",
+          "name": "Renminbi",
+          "unit": null,
+          "numeric_code": "n/a"
+        }
+      },
+      {
+        "id": 23,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 21,
+          "symbol": "HK$",
+          "mnemonic": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": null,
+          "numeric_code": "344"
+        }
+      },
+      {
+        "id": 24,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 23,
+          "symbol": "₪",
+          "mnemonic": "ILS",
+          "name": "Israeli new shekel",
+          "unit": null,
+          "numeric_code": "376"
+        }
+      },
+      {
+        "id": 25,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 2,
+          "symbol": "€",
+          "mnemonic": "EUR",
+          "name": "Euro",
+          "unit": null,
+          "numeric_code": "978"
+        }
+      },
+      {
+        "id": 26,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 7,
+          "symbol": "$",
+          "mnemonic": "AUD",
+          "name": "Australian Dollar",
+          "unit": null,
+          "numeric_code": "036"
+        }
+      },
+      {
+        "id": 27,
+        "base_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        },
+        "quote_currency": {
+          "id": 3,
+          "symbol": "£",
+          "mnemonic": "GBP",
+          "name": "Great British Pound",
+          "unit": null,
+          "numeric_code": "826"
+        }
+      },
+      {
+        "id": 28,
+        "base_currency": {
+          "id": 10,
+          "symbol": "₩",
+          "mnemonic": "KRW",
+          "name": "South Korean won",
+          "unit": null,
+          "numeric_code": "410"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 29,
+        "base_currency": {
+          "id": 14,
+          "symbol": "Fr",
+          "mnemonic": "CHF",
+          "name": "Swiss Franc",
+          "unit": null,
+          "numeric_code": "756"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 30,
+        "base_currency": {
+          "id": 22,
+          "symbol": "¥",
+          "mnemonic": "CNH",
+          "name": "Renminbi",
+          "unit": null,
+          "numeric_code": "n/a"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 31,
+        "base_currency": {
+          "id": 8,
+          "symbol": "元",
+          "mnemonic": "CNY",
+          "name": "Chinese Yuan",
+          "unit": null,
+          "numeric_code": "156"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 32,
+        "base_currency": {
+          "id": 21,
+          "symbol": "HK$",
+          "mnemonic": "HKD",
+          "name": "Hong Kong Dollar",
+          "unit": null,
+          "numeric_code": "344"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 33,
+        "base_currency": {
+          "id": 23,
+          "symbol": "₪",
+          "mnemonic": "ILS",
+          "name": "Israeli new shekel",
+          "unit": null,
+          "numeric_code": "376"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 34,
+        "base_currency": {
+          "id": 5,
+          "symbol": "$",
+          "mnemonic": "MXN",
+          "name": "Mexican Peso",
+          "unit": null,
+          "numeric_code": "484"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 35,
+        "base_currency": {
+          "id": 17,
+          "symbol": "₽",
+          "mnemonic": "RUB",
+          "name": "Russian ruble",
+          "unit": null,
+          "numeric_code": "643"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 36,
+        "base_currency": {
+          "id": 19,
+          "symbol": "﷼",
+          "mnemonic": "SAR",
+          "name": "Saudi riyal",
+          "unit": null,
+          "numeric_code": "682"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 37,
+        "base_currency": {
+          "id": 11,
+          "symbol": "$",
+          "mnemonic": "SGD",
+          "name": "Singapore dollar",
+          "unit": null,
+          "numeric_code": "702"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 38,
+        "base_currency": {
+          "id": 9,
+          "symbol": "₺",
+          "mnemonic": "TRY",
+          "name": "Turkish Lira",
+          "unit": null,
+          "numeric_code": "949"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      },
+      {
+        "id": 39,
+        "base_currency": {
+          "id": 12,
+          "symbol": "R",
+          "mnemonic": "ZAR",
+          "name": "South African Rand",
+          "unit": null,
+          "numeric_code": "710"
+        },
+        "quote_currency": {
+          "id": 1,
+          "symbol": "$",
+          "mnemonic": "USD",
+          "name": "US Dollar",
+          "unit": null,
+          "numeric_code": "840"
+        }
+      }
+    ]
+  },
+  "marketData": {
+    "count": 1536,
+    "next": "https://dashboard.dev.pangea.io/api/marketdata/spot/eod/?end_date=2022-06-22T04%3A00%3A00.000Z&limit=39&offset=39&ordering=-date&pair_ids=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30%2C31%2C32%2C33%2C34%2C35%2C36%2C37%2C38%2C39",
+    "previous": null,
+    "results": [
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 7,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 8,
+            "symbol": "元",
+            "mnemonic": "CNY",
+            "name": "Chinese Yuan",
+            "unit": null,
+            "numeric_code": "156"
+          }
+        },
+        "rate": 6.689532,
+        "rate_bid": 6.686878,
+        "rate_ask": 6.692185
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 23,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 21,
+            "symbol": "HK$",
+            "mnemonic": "HKD",
+            "name": "Hong Kong Dollar",
+            "unit": null,
+            "numeric_code": "344"
+          }
+        },
+        "rate": 7.84997,
+        "rate_bid": 7.84963,
+        "rate_ask": 7.85031
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 27,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 3,
+            "symbol": "£",
+            "mnemonic": "GBP",
+            "name": "Great British Pound",
+            "unit": null,
+            "numeric_code": "826"
+          }
+        },
+        "rate": 0.8144914315501401,
+        "rate_bid": 0.8146838619273791,
+        "rate_ask": 0.8142990920565123
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 20,
+          "base_currency": {
+            "id": 4,
+            "symbol": "$",
+            "mnemonic": "CAD",
+            "name": "Canadian Dollar",
+            "unit": null,
+            "numeric_code": "124"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.7739938080495355,
+        "rate_bid": 0.7741795632078904,
+        "rate_ask": 0.7738081420092702
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 24,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 23,
+            "symbol": "₪",
+            "mnemonic": "ILS",
+            "name": "Israeli new shekel",
+            "unit": null,
+            "numeric_code": "376"
+          }
+        },
+        "rate": 3.45217,
+        "rate_bid": 3.44967,
+        "rate_ask": 3.45467
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 5,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 6,
+            "symbol": "¥",
+            "mnemonic": "JPY",
+            "name": "Japanese Yen",
+            "unit": null,
+            "numeric_code": "392"
+          }
+        },
+        "rate": 136.6455,
+        "rate_bid": 136.613,
+        "rate_ask": 136.678
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 21,
+          "base_currency": {
+            "id": 6,
+            "symbol": "¥",
+            "mnemonic": "JPY",
+            "name": "Japanese Yen",
+            "unit": null,
+            "numeric_code": "392"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.007318206600290533,
+        "rate_bid": 0.007319947589175262,
+        "rate_ask": 0.0073164664393684424
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 28,
+          "base_currency": {
+            "id": 10,
+            "symbol": "₩",
+            "mnemonic": "KRW",
+            "name": "South Korean won",
+            "unit": null,
+            "numeric_code": "410"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.0007737243220240628,
+        "rate_bid": 0.000774285663404085,
+        "rate_ask": 0.0007731643917593047
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 31,
+          "base_currency": {
+            "id": 8,
+            "symbol": "元",
+            "mnemonic": "CNY",
+            "name": "Chinese Yuan",
+            "unit": null,
+            "numeric_code": "156"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.14948728849790988,
+        "rate_bid": 0.14954661951362055,
+        "rate_ask": 0.14942802687014778
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 3,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 4,
+            "symbol": "$",
+            "mnemonic": "CAD",
+            "name": "Canadian Dollar",
+            "unit": null,
+            "numeric_code": "124"
+          }
+        },
+        "rate": 1.292,
+        "rate_bid": 1.29169,
+        "rate_ask": 1.29231
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 25,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 2,
+            "symbol": "€",
+            "mnemonic": "EUR",
+            "name": "Euro",
+            "unit": null,
+            "numeric_code": "978"
+          }
+        },
+        "rate": 0.9492664543474031,
+        "rate_bid": 0.9494061464553921,
+        "rate_ask": 0.9491268033409263
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 2,
+          "base_currency": {
+            "id": 3,
+            "symbol": "£",
+            "mnemonic": "GBP",
+            "name": "Great British Pound",
+            "unit": null,
+            "numeric_code": "826"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 1.22776,
+        "rate_bid": 1.22747,
+        "rate_ask": 1.22805
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 26,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 7,
+            "symbol": "$",
+            "mnemonic": "AUD",
+            "name": "Australian Dollar",
+            "unit": null,
+            "numeric_code": "036"
+          }
+        },
+        "rate": 1.4345247061017508,
+        "rate_bid": 1.4351320321469576,
+        "rate_ask": 1.4339178938613977
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 10,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 11,
+            "symbol": "$",
+            "mnemonic": "SGD",
+            "name": "Singapore dollar",
+            "unit": null,
+            "numeric_code": "702"
+          }
+        },
+        "rate": 1.38569,
+        "rate_bid": 1.38523,
+        "rate_ask": 1.38615
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 34,
+          "base_currency": {
+            "id": 5,
+            "symbol": "$",
+            "mnemonic": "MXN",
+            "name": "Mexican Peso",
+            "unit": null,
+            "numeric_code": "484"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.04969240401912164,
+        "rate_bid": 0.04971026372786216,
+        "rate_ask": 0.04967453246330046
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 32,
+          "base_currency": {
+            "id": 21,
+            "symbol": "HK$",
+            "mnemonic": "HKD",
+            "name": "Hong Kong Dollar",
+            "unit": null,
+            "numeric_code": "344"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.12738902186887338,
+        "rate_bid": 0.127394539615243,
+        "rate_ask": 0.12738350460045525
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 37,
+          "base_currency": {
+            "id": 11,
+            "symbol": "$",
+            "mnemonic": "SGD",
+            "name": "Singapore dollar",
+            "unit": null,
+            "numeric_code": "702"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.7216621322229358,
+        "rate_bid": 0.7219017780440793,
+        "rate_ask": 0.7214226454568409
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 33,
+          "base_currency": {
+            "id": 23,
+            "symbol": "₪",
+            "mnemonic": "ILS",
+            "name": "Israeli new shekel",
+            "unit": null,
+            "numeric_code": "376"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.28967287242517026,
+        "rate_bid": 0.2898828003838049,
+        "rate_ask": 0.28946324829867975
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 4,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 5,
+            "symbol": "$",
+            "mnemonic": "MXN",
+            "name": "Mexican Peso",
+            "unit": null,
+            "numeric_code": "484"
+          }
+        },
+        "rate": 20.1238,
+        "rate_bid": 20.11657,
+        "rate_ask": 20.13104
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 30,
+          "base_currency": {
+            "id": 22,
+            "symbol": "¥",
+            "mnemonic": "CNH",
+            "name": "Renminbi",
+            "unit": null,
+            "numeric_code": "n/a"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.1494614157882072,
+        "rate_bid": 0.14954344386587748,
+        "rate_ask": 0.14937947764984255
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 6,
+          "base_currency": {
+            "id": 7,
+            "symbol": "$",
+            "mnemonic": "AUD",
+            "name": "Australian Dollar",
+            "unit": null,
+            "numeric_code": "036"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.697095,
+        "rate_bid": 0.6968,
+        "rate_ask": 0.69739
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 1,
+          "base_currency": {
+            "id": 2,
+            "symbol": "€",
+            "mnemonic": "EUR",
+            "name": "Euro",
+            "unit": null,
+            "numeric_code": "978"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 1.053445,
+        "rate_bid": 1.05329,
+        "rate_ask": 1.0536
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 22,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 22,
+            "symbol": "¥",
+            "mnemonic": "CNH",
+            "name": "Renminbi",
+            "unit": null,
+            "numeric_code": "n/a"
+          }
+        },
+        "rate": 6.69069,
+        "rate_bid": 6.68702,
+        "rate_ask": 6.69436
+      },
+      {
+        "date": "2022-06-21T21:00:00Z",
+        "pair": {
+          "id": 9,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 10,
+            "symbol": "₩",
+            "mnemonic": "KRW",
+            "name": "South Korean won",
+            "unit": null,
+            "numeric_code": "410"
+          }
+        },
+        "rate": 1292.45,
+        "rate_bid": 1291.513,
+        "rate_ask": 1293.386
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 24,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 23,
+            "symbol": "₪",
+            "mnemonic": "ILS",
+            "name": "Israeli new shekel",
+            "unit": null,
+            "numeric_code": "376"
+          }
+        },
+        "rate": 3.44544,
+        "rate_bid": 3.44294,
+        "rate_ask": 3.44794
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 26,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 7,
+            "symbol": "$",
+            "mnemonic": "AUD",
+            "name": "Australian Dollar",
+            "unit": null,
+            "numeric_code": "036"
+          }
+        },
+        "rate": 1.438414292084406,
+        "rate_bid": 1.4390352707544862,
+        "rate_ask": 1.4377938491179136
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 9,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 10,
+            "symbol": "₩",
+            "mnemonic": "KRW",
+            "name": "South Korean won",
+            "unit": null,
+            "numeric_code": "410"
+          }
+        },
+        "rate": 1292.557,
+        "rate_bid": 1291.514,
+        "rate_ask": 1293.6
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 25,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 2,
+            "symbol": "€",
+            "mnemonic": "EUR",
+            "name": "Euro",
+            "unit": null,
+            "numeric_code": "978"
+          }
+        },
+        "rate": 0.951370687317753,
+        "rate_bid": 0.9515653249595585,
+        "rate_ask": 0.9511761292838594
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 2,
+          "base_currency": {
+            "id": 3,
+            "symbol": "£",
+            "mnemonic": "GBP",
+            "name": "Great British Pound",
+            "unit": null,
+            "numeric_code": "826"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 1.22489,
+        "rate_bid": 1.22455,
+        "rate_ask": 1.22523
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 10,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 11,
+            "symbol": "$",
+            "mnemonic": "SGD",
+            "name": "Singapore dollar",
+            "unit": null,
+            "numeric_code": "702"
+          }
+        },
+        "rate": 1.38886,
+        "rate_bid": 1.38842,
+        "rate_ask": 1.3893
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 7,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 8,
+            "symbol": "元",
+            "mnemonic": "CNY",
+            "name": "Chinese Yuan",
+            "unit": null,
+            "numeric_code": "156"
+          }
+        },
+        "rate": 6.692498,
+        "rate_bid": 6.689789,
+        "rate_ask": 6.695207
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 22,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 22,
+            "symbol": "¥",
+            "mnemonic": "CNH",
+            "name": "Renminbi",
+            "unit": null,
+            "numeric_code": "n/a"
+          }
+        },
+        "rate": 6.689385,
+        "rate_bid": 6.68648,
+        "rate_ask": 6.69229
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 23,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 21,
+            "symbol": "HK$",
+            "mnemonic": "HKD",
+            "name": "Hong Kong Dollar",
+            "unit": null,
+            "numeric_code": "344"
+          }
+        },
+        "rate": 7.849925,
+        "rate_bid": 7.84954,
+        "rate_ask": 7.85031
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 1,
+          "base_currency": {
+            "id": 2,
+            "symbol": "€",
+            "mnemonic": "EUR",
+            "name": "Euro",
+            "unit": null,
+            "numeric_code": "978"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 1.051115,
+        "rate_bid": 1.0509,
+        "rate_ask": 1.05133
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 28,
+          "base_currency": {
+            "id": 10,
+            "symbol": "₩",
+            "mnemonic": "KRW",
+            "name": "South Korean won",
+            "unit": null,
+            "numeric_code": "410"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.0007736602718487463,
+        "rate_bid": 0.0007742850638862606,
+        "rate_ask": 0.0007730364873222016
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 21,
+          "base_currency": {
+            "id": 6,
+            "symbol": "¥",
+            "mnemonic": "JPY",
+            "name": "Japanese Yen",
+            "unit": null,
+            "numeric_code": "392"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.0074022258493128875,
+        "rate_bid": 0.007404061868340971,
+        "rate_ask": 0.007400390740631106
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 3,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 4,
+            "symbol": "$",
+            "mnemonic": "CAD",
+            "name": "Canadian Dollar",
+            "unit": null,
+            "numeric_code": "124"
+          }
+        },
+        "rate": 1.298085,
+        "rate_bid": 1.29774,
+        "rate_ask": 1.29843
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 6,
+          "base_currency": {
+            "id": 7,
+            "symbol": "$",
+            "mnemonic": "AUD",
+            "name": "Australian Dollar",
+            "unit": null,
+            "numeric_code": "036"
+          },
+          "quote_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          }
+        },
+        "rate": 0.69521,
+        "rate_bid": 0.69491,
+        "rate_ask": 0.69551
+      },
+      {
+        "date": "2022-06-20T21:00:00Z",
+        "pair": {
+          "id": 27,
+          "base_currency": {
+            "id": 1,
+            "symbol": "$",
+            "mnemonic": "USD",
+            "name": "US Dollar",
+            "unit": null,
+            "numeric_code": "840"
+          },
+          "quote_currency": {
+            "id": 3,
+            "symbol": "£",
+            "mnemonic": "GBP",
+            "name": "Great British Pound",
+            "unit": null,
+            "numeric_code": "826"
+          }
+        },
+        "rate": 0.8163998399856314,
+        "rate_bid": 0.8166265158629701,
+        "rate_ask": 0.8161732899129143
+      }
+    ]
+  }
+}

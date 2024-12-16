@@ -1,0 +1,75 @@
+name: Manual Merge Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      commitMsg:
+        description: "Commit message"
+        required: false
+        default: "Out-of-band merge to development branch"
+        type: string
+      option:
+        description: "What do you want to merge?"
+        required: true
+        type: choice
+        options:
+          - "main>dev"
+          - "dev>staging"
+          - "staging>staging-ondeck"
+          - "staging-ondeck>production"
+
+jobs:
+  automatic_merge:
+    runs-on: ubuntu-latest
+    name: Merging between branches
+    steps:
+      - uses: actions/checkout@master
+      - name: Get current date
+        id: date
+        run: echo "CURRENT_DATE=$(date --rfc-3339=date)" >> ${GITHUB_ENV}
+      #Daily merge from main to dev. No restrictions
+      - name: Merge main -> development
+        uses: devmasx/merge-branch@master
+        if: ${{inputs.option == 'main>dev'}}
+        with:
+          type: now
+          from_branch: main
+          target_branch: deploy/development
+          message: ${{inputs.commitMsg}} for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      - name: Merge development -> staging
+        uses: devmasx/merge-branch@master
+        if: ${{inputs.option == 'dev>staging'}}
+        with:
+          type: now
+          from_branch: deploy/development
+          target_branch: deploy/staging
+          message: ${{inputs.commitMsg}} for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      - name: Merge staging -> staging-ondeck
+        uses: devmasx/merge-branch@master
+        if: ${{inputs.option == 'staging>staging-ondeck'}}
+        with:
+          type: now
+          from_branch: deploy/staging
+          target_branch: deploy/staging-ondeck
+          message: ${{inputs.commitMsg}} for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      - name: Merge staging-ondeck -> production
+        uses: devmasx/merge-branch@master
+        if: ${{inputs.option == 'staging-ondeck>production'}}
+        with:
+          type: now
+          from_branch: deploy/staging-ondeck
+          target_branch: deploy/production
+          message: ${{inputs.commitMsg}} for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}
+      - name: Merge production -> demo
+        uses: devmasx/merge-branch@master
+        if: ${{inputs.option == 'production>demo'}}
+        with:
+          type: now
+          from_branch: deploy/production
+          target_branch: deploy/demo
+          message: ${{inputs.commitMsg}} for ${{env.CURRENT_DATE}}
+          github_token: ${{ github.token }}

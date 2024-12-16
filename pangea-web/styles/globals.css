@@ -1,0 +1,330 @@
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Black.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-BlackItalic.otf');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Bold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-BoldItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Book.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-BookItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-LightItalic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Medium.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-SemiBold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-SemiBoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-Thin.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-ThinItalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-UltraLight.otf');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntl;
+  src: url('/fonts/SuisseIntl-UltraLightItalic.otf');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-BoldItalic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-LightItalic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-MediumItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Semibold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-SemiBoldIta.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-Thin.otf');
+  font-weight: 100 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlCond;
+  src: url('/fonts/SuisseIntlCond-ThinItalic.otf');
+  font-weight: 100 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseIntlMono;
+  src: url('/fonts/SuisseIntlMono-Bold.otf');
+  font-weight: 700 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlMono;
+  src: url('/fonts/SuisseIntlMono-Regular.otf');
+  font-weight: 300 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseIntlMono;
+  src: url('/fonts/SuisseIntlMono-Thin.otf');
+  font-weight: 100 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-Light.otf');
+  font-weight: 200 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-LightItalic.otf');
+  font-weight: 200 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-Medium.otf');
+  font-weight: 500 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-MediumItalic.otf');
+  font-weight: 500 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseNeue;
+  src: url('/fonts/SuisseNeue-RegularItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-Bold.otf');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-BoldItalic.otf');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-Regular.otf');
+  font-weight: 300 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-RegularItalic.otf');
+  font-weight: 300 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-SemiBold.otf');
+  font-weight: 600 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-SemiBoldItalic.otf');
+  font-weight: 600 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-Thin.otf');
+  font-weight: 100 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseSign;
+  src: url('/fonts/SuisseSign-ThinItalic.otf');
+  font-weight: 100 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-Bold.otf');
+  font-weight: 700 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-BoldItalic.otf');
+  font-weight: 700 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-Book.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-BookItalic.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-Medium.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-MediumItalic.otf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-Regular.otf');
+  font-weight: 300 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SuisseWorks;
+  src: url('/fonts/SuisseWorks-RegularItalic.otf');
+  font-weight: 300 400;
+  font-style: italic;
+}

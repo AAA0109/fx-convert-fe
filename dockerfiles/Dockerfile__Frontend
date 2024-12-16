@@ -1,0 +1,97 @@
+FROM node:18-alpine AS deps
+
+############################
+# Install dependencies only when needed
+############################
+
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+
+ARG CFE_NPM_TOKEN
+ENV CFE_NPM_TOKEN ${CFE_NPM_TOKEN}
+
+WORKDIR /app
+COPY pangea-web/package.json pangea-web/package-lock.json pangea-web/.npmrc ./
+
+RUN npm ci
+
+############################
+# Install SWC dependencies
+############################
+# TODO: check if we need this in production
+RUN npm install -E --save-optional @next/swc-linux-x64-gnu
+
+############################
+# Rebuild the source code only when needed
+############################
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY pangea-web/ .
+COPY .git/ ./.git
+
+############################
+# RUN npm run build
+############################
+ENV NEXT_TELEMETRY_DISABLED 1
+ARG NEXT_PUBLIC_PANGEA_API_URL=localhost
+ENV NEXT_PUBLIC_PANGEA_API_URL ${NEXT_PUBLIC_PANGEA_API_URL}
+
+ARG NEXT_PUBLIC_STRIPE_API_KEY
+ENV NEXT_PUBLIC_STRIPE_API_KEY ${NEXT_PUBLIC_STRIPE_API_KEY}
+
+ARG NEXT_PUBLIC_MUI_LICENSE
+ENV NEXT_PUBLIC_MUI_LICENSE ${NEXT_PUBLIC_MUI_LICENSE}
+
+ARG NEXT_PUBLIC_ENABLE_FEATURE_FLAG_DEVTOOL
+ENV NEXT_PUBLIC_ENABLE_FEATURE_FLAG_DEVTOOL ${NEXT_PUBLIC_ENABLE_FEATURE_FLAG_DEVTOOL}
+
+ARG CFE_NPM_TOKEN
+ENV CFE_NPM_TOKEN ${CFE_NPM_TOKEN}
+
+RUN npm install -g npm@latest
+
+RUN apk update && apk add git
+RUN npm run build
+
+############################
+# Production image, copy all the files
+############################
+FROM node:18-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV production
+
+############################
+# Set permissions
+############################
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+############################
+# Copy code files
+############################
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/newrelic.js ./
+COPY --from=builder /app/.npmrc ./
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+############################
+# Setup runtime configurations and checks
+############################
+ARG CFE_NPM_TOKEN
+ENV CFE_NPM_TOKEN ${CFE_NPM_TOKEN}
+RUN npm install @newrelic/next
+RUN npm install @newrelic/next
+RUN touch /app/newrelic_agent.log && chown nextjs:nodejs /app/newrelic_agent.log
+USER nextjs
+
+EXPOSE 3000
+ENV PORT 3000
+
+CMD ["node", "--require", "@newrelic/next", "server.js"]
